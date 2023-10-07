@@ -27,9 +27,15 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	//implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.hibernate:hibernate-validator:7.0.5.Final'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	implementation 'io.hypersistence:hypersistence-utils-hibernate-52:3.5.0'
 	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+	// postgres
+	implementation 'org.postgresql:postgresql'
+	// hibernate-spatial
+	implementation 'org.hibernate:hibernate-spatial:5.6.11.Final'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
