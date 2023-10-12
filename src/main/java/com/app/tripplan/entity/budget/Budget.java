@@ -46,6 +46,7 @@ public class Budget extends Period {
      * Budget Access Type(교통 접근 타입)
      **/
     @NotNull
+    @Enumerated(EnumType.STRING)
     private AccessType accessType;
 
     /**

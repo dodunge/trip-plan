@@ -40,5 +40,5 @@ public class TeamMembers extends Period {
      * Team Entity 와 연관 관계 (N : 1)
      **/
     @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
+    private Team team;
 }

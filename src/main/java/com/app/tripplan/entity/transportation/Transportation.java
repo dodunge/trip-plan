@@ -53,13 +53,14 @@ public class Transportation extends Period {
      * Transportation Access Type(교통 접근 타입)
      **/
     @NotNull
+    @Enumerated(EnumType.STRING)
     private AccessType accessType;
 
     /**
      * Transportation Reservation Date(교통편 예약 날짜)
      **/
     @NotNull
-    private LocalDateTime reservationDate;
+    private LocalDateTime reservationDateTime;
 
     /**
      * User Entity 와 연관 관계 (N : 1)

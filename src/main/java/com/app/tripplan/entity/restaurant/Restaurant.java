@@ -3,6 +3,7 @@ package com.app.tripplan.entity.restaurant;
 import com.app.tripplan.embeddable.Address;
 import com.app.tripplan.auditing.Period;
 import com.app.tripplan.entity.trip.Trip;
+import com.app.tripplan.json.BusinessTime;
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -16,6 +17,7 @@ import org.hibernate.annotations.TypeDef;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Map;
 
@@ -56,14 +58,14 @@ public class Restaurant extends Period {
     /**
      * Restaurant Visit Date(식당 예약 날짜)
      **/
-    private LocalDateTime visitDate;
+    private LocalDateTime visitDateTime;
 
     /**
      * Restaurant Business Time(기타 식당 운영 시간(open, close, break time))
      **/
     @Type(type = "json")
     @Column(columnDefinition = "json")
-    private List<Map<String, LocalDateTime>> businessTime;
+    private BusinessTime businessTime;
 
     /**
      * Trip Entity 와 연관 관계 (N : 1)

@@ -19,8 +19,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Period {
     @CreatedDate
-    private LocalDateTime createdDate;
+    private LocalDateTime createdDateTime;
     @LastModifiedDate
-    private LocalDateTime updatedDate;
-    private LocalDateTime deletedDate;
+    private LocalDateTime updatedDateTime;
+    private LocalDateTime deletedDateTime;
 }

@@ -40,6 +40,7 @@ public class Memo extends Period {
      * Memo Access Type(메모 접근 타입)
      **/
     @NotNull
+    @Enumerated(EnumType.STRING)
     private AccessType accessType;
 
     /**

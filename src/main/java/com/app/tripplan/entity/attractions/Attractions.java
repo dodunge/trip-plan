@@ -51,7 +51,7 @@ public class Attractions extends Period {
     /**
      * Attractions Visit Date(관광 예약 날짜)
      **/
-    private LocalDateTime visitDate;
+    private LocalDateTime visitDateTime;
 
     /**
      * Attractions Ticket Needed(관광 티켓 필요 유무)

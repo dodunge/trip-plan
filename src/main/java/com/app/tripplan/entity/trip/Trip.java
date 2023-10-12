@@ -44,13 +44,13 @@ public class Trip extends Period {
      * Trip Start Date(여행 시작 날짜)
      **/
     @NotNull
-    private LocalDateTime tripStartDate;
+    private LocalDateTime tripStartDateTime;
 
     /**
      * Trip End Date(여행 종료 날짜)
      **/
     @NotNull
-    private LocalDateTime tripEndDate;
+    private LocalDateTime tripEndDateTime;
 
     /**
      * Trip Public Options(여행 공개 여부)

@@ -11,6 +11,7 @@ import org.hibernate.annotations.SQLDelete;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "TBL_TEAM")
@@ -39,5 +40,9 @@ public class Team  extends Period {
      **/
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private List<TeamMembers> members;
 
 }
